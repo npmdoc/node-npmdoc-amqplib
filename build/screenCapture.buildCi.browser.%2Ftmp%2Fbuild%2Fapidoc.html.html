@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="http://squaremo.github.io/amqp.node/"
-
-    >amqplib (v0.5.1)</a>
+    <a href="http://squaremo.github.io/amqp.node/">amqplib (v0.5.1)</a>
 </h1>
 <h4>An AMQP 0-9-1 (e.g., RabbitMQ) library and client.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.amqplib">module amqplib</a><ol>
 
@@ -128,8 +121,8 @@
   }
 }
 
-require(&#x27;amqplib/callback_api&#x27;)
-  .<span class="apidocCodeKeywordSpan">connect</span>(&#x27;amqp://localhost&#x27;, function(err, conn) {
+require('amqplib/callback_api')
+  .<span class="apidocCodeKeywordSpan">connect</span>('amqp://localhost', function(err, conn) {
     if (err != null) bail(err);
     consumer(conn);
     publisher(conn);
@@ -158,8 +151,8 @@ require(&#x27;amqplib/callback_api&#x27;)
     <ul>
     <li>description and source-code<pre class="apidocCodePre">external = function () {
   return {
-    mechanism: &#x27;EXTERNAL&#x27;,
-    response: function() { return new Buffer(&#x27;&#x27;); }
+    mechanism: 'EXTERNAL',
+    response: function() { return new Buffer(''); }
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -176,9 +169,9 @@ require(&#x27;amqplib/callback_api&#x27;)
     <ul>
     <li>description and source-code<pre class="apidocCodePre">plain = function (user, passwd) {
   return {
-    mechanism: &#x27;PLAIN&#x27;,
+    mechanism: 'PLAIN',
     response: function() {
-      return new Buffer([&#x27;&#x27;, user, passwd].join(String.fromCharCode(0)))
+      return new Buffer(['', user, passwd].join(String.fromCharCode(0)))
     }
   }
 }</pre></li>
@@ -194,3 +187,4 @@ require(&#x27;amqplib/callback_api&#x27;)
     ]
 </div>
 </div>
+</body></html>
